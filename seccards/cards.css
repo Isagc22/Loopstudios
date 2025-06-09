@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-seccion-cards {
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cont-titulo-boton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.contenedor-seccion-cards h2 {
+    font-family: "Josefin Sans", sans-serif;
+
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.boton-ver-mas-card a {
+    font-family: "Josefin Sans", sans-serif;
+
+
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 0.4rem 2rem;
+
+}
+
+.cont-cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+
+}
+
+.card h3 {
+    font-size: 30px;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 200;
+    width: 50%;
+
+}
+
+.card {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 256px;
+    height: 450px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 1rem;
+}
+
+.card:nth-child(1) {
+    background-image: url('../images/desktop/image-deep-earth.jpg');
+}
+
+.card:nth-child(2) {
+    background-image: url('../images/desktop/image-night-arcade.jpg');
+}
+
+.card:nth-child(3) {
+    background-image: url('../images/desktop/image-soccer-team.jpg');
+}
+
+.card:nth-child(4) {
+    background-image: url('../images/desktop/image-grid.jpg');
+}
+
+.card:nth-child(5) {
+    background-image: url('../images/desktop/image-from-above.jpg');
+}
+
+.card:nth-child(6) {
+    background-image: url('../images/desktop/image-pocket-borealis.jpg');
+}
+
+.card:nth-child(7) {
+    background-image: url('../images/desktop/image-curiosity.jpg');
+}
+
+.card:nth-child(8) {
+    background-image: url('../images/desktop/image-fisheye.jpg');
+}

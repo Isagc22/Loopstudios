@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --color-letra: white;
+    --font-family-letra: "Alata", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    /* position: absolute;
+    top: 0; */
+    width: 100%;
+    /* z-index: 10;
+    padding: 40px 80px;
+    left: 10%; */
+    padding: 0 9%;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--font-family-letra);
+
+}
+
+li a:hover {
+    border-bottom: 2px solid black;
+}
+
+.contenedor-imagen-fondo {
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 100px 20px;
+    color: white;
+    position: relative;
+    height: 100vh;
+}
+
+.contenedor-texto-tit {
+    border: 1px solid #ffff;
+    padding: 20px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 47%;
+}
+
+h1.titulo-banner {
+    font-size: 56px;
+    line-height: 1.3;
+    font-weight: 100;
+    font-family: "Alata", sans-serif;
+    width: 60%;
+}
+
+
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+
+
+@media (max-width:768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        /* top: 100px; */
+        /* left: 0; */
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+      nav li {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #333;
+  }
+}

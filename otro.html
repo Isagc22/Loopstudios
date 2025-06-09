@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loopstudios Banner</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner {
+      background-image: url('./images/desktop/image-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      position: relative;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 80px;
+      
+      font-size: 14px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      border: 2px solid white;
+      padding: 40px;
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      line-height: 1.3;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <div class="navbar">
+      <div class="logo">loop<span style="font-weight: 300">studios</span></div>
+      <div class="nav-links">
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+
+    <div class="hero-text">
+      <h1>Immersive<br>Experiences<br>That Deliver</h1>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* 
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  -----------------------------------
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  */
+:root {
+    --color-letra: white;
+    --font-family-letra: "Alata", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: black;
+}
+
+.contendor-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 2rem;
+    flex-direction: row;
+}
+
+.cont-izq-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul.listado-op {
+    display: flex;
+    gap: 20px;
+}
+
+ul.listado-op li a {
+    list-style: none;
+    color: var(--color-letra);
+    text-decoration: none;
+    font-family: var(--font-family-letra);
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul.listado-op li a:hover {
+    border-bottom: 2px solid #872d8c;
+}
+
+
+.cont-der-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logos-redes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.copyright p {
+    color: var(--color-letra);
+    font-family: var(--font-family-letra);
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .cont-izq-footer {
+        align-items: center;
+    }
+
+    ul.listado-op {
+        flex-direction: column;
+    }
+
+    .contendor-footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .logos-redes {
+        justify-content: center;
+    }
+}
+
+@media (max-width:576px) {
+    .cont-izq-footer {
+        align-items: center;
+    }
+
+    .ul.listado-op {
+        flex-direction: column;
+    }
+
+    .contendor-footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .logos-redes {
+        justify-content: center;
+    }
+}
