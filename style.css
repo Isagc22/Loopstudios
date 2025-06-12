@@ -114,10 +114,15 @@ h1.titulo-banner {
         display: none;
         flex-direction: column;
         width: 100%;
-        position: absolute;
-        /* top: 100px; */
-        /* left: 0; */
+        position: fixed;
+        top: 0;
+        left: 0;
         z-index: 1000;
+        background-color: black;
+        height: 100vh;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 20px;
     }
 
     nav ul.active {
@@ -225,27 +230,23 @@ h1.titulo-banner {
 
 .contenedor-seccion-cards h2 {
     font-family: "Josefin Sans", sans-serif;
-
     font-weight: 300;
     font-size: 40px;
 }
 
 .boton-ver-mas-card a {
     font-family: "Josefin Sans", sans-serif;
-
-
     text-decoration: none;
     color: black;
     border: 2px solid black;
     padding: 0.4rem 2rem;
-
 }
 
 .cont-cards{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-
+    justify-items: center;
 }
 
 .card h3 {
@@ -259,14 +260,16 @@ h1.titulo-banner {
 
 .card {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     max-width: 256px;
     height: 450px;
     display: flex;
-    justify-content: start;
-    align-items: end;
+    justify-content: flex-start;
+    align-items: flex-end;
     padding: 1rem;
+    position: relative;
 }
 
 .card:nth-child(1) {
@@ -398,3 +401,58 @@ ul.listado-op li a:hover {
         justify-content: center;
     }
 }
+
+.close-menu {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+
+@media (max-width: 768px) {
+    .contenedor-seccion-cards {
+        padding: 2rem;
+    }
+
+    .cont-titulo-boton {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cont-titulo-boton h2 {
+        order: 1;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .boton-ver-mas-card {
+        order: 3;
+    }
+
+    .cont-cards {
+        order: 2;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .card {
+        max-width: 100%;
+        height: 120px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card h3 {
+        font-size: 20px;
+        width: 70%;
+    }
+}
+
